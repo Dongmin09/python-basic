@@ -1,0 +1,5 @@
+class Hello{
+	public void static void main(String[] a){
+		System.out.println("Hello java");	
+	}
+}

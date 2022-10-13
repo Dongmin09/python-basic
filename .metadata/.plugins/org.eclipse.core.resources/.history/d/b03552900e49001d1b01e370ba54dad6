@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function myclick(){
+
+	
+	
+	}
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td>
+			<input type="text" id="it1">
+		</td>
+		<td>
+			<input type="button" value="plus" >
+			<input type="button" value="minus" >
+			<input type="button" value="multiply" >
+			<input type="button" value="divide" >
+		</td>
+	</tr>
+
+
+</table>
+
+
+
+</html>

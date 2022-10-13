@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function myclick(){
+	var obj = document.getElementById('it');
+	alert("myclick");
+	aaa = parseInt(obj) + 3;
+	
+	}
+</script>
+
+
+</head>
+<body>
+</body>
+<input type="text" id="it" value="200" />
+<input type="button" value="plus3" onclick="myclick()"/>
+</html>

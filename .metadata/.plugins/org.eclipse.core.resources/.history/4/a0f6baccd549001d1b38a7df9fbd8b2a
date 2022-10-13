@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#it{
+	width: 30px;
+}
+
+</style>
+<script>
+function myclick(){
+	var obj_it = document.querySelector("#it");
+	var obj = obj_it.value;
+	var mine = parseInt(obj);
+
+	console.log(mine);
+}
+
+function myreset(){
+	var obj_it = document.querySelector("#it");
+	var obj = obj_it.value;
+	var mine = parseInt(obj);
+	
+	var arr9 = [1,2,3,4,5,6,7,8,9];
+	
+	for(var i=0; i<100; i++){
+		var	rnd = (parseInt)(Math.random()*9);
+		var a = arr9[0];
+		var b = arr9[rnd];
+		arr9[0]=b;
+		arr9[rnd]=a;
+	}
+	
+}
+
+
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td>스트라이크</td>
+		<td>
+			<input type="text" id="it" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" value="맞추기" onclick="myclick()" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<textarea id="ta" rows="20" cols="20"></textarea>
+		</td>
+	</tr>
+
+</table>
+
+
+</html>

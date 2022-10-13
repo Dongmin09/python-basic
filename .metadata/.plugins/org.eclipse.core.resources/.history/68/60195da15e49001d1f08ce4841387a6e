@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function lotto(){
+		var ro1 = document.querySelector("#ro1");
+		var ro2 = document.querySelector("#ro2");
+		var ro3 = document.querySelector("#ro3");
+		var ro4 = document.querySelector("#ro4");
+		var ro5 = document.querySelector("#ro5");
+		var ro6 = document.querySelector("#ro6");
+		
+		
+	   	var arr45 = [
+	         1,2,3,4,5,6,7,8,9,10,
+	         11,12,13,14,15,16,17,18,19,20,
+	         21,22,23,24,25,26,27,28,29,30,
+	         31,32,33,34,35,36,37,38,39,40,
+	         41,42,43,44,45
+	   		];
+	   
+	   
+	   
+		for(i=0; i<100; i++){	
+			var	rnd = (parseInt)(Math.random()*45);
+			var a = arr45[0];
+			var b = arr45[rnd];
+			arr45[0]=b;
+			arr45[rnd]=a;
+			
+		}
+		
+		rnd45 = parseInt(arr45);
+		
+		ro1.value= arr45[0];
+		ro2.value= arr45[1];
+		ro3.value= arr45[2];
+		ro4.value= arr45[3];
+		ro5.value= arr45[4];
+		ro6.value= arr45[5];
+		console.log(ro1.value);
+		console.log(ro2.value);
+		console.log(ro3.value);
+		console.log(ro4.value);
+		console.log(ro5.value);
+		console.log(ro6.value);
+	
+	}
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td><div class="mydiv" id="ro1">__</div></td>
+		<td><div class="mydiv" id="ro2">__</div></td>
+		<td><div class="mydiv" id="ro3">__</div></td>
+		<td><div class="mydiv" id="ro4">__</div></td>
+		<td><div class="mydiv" id="ro5">__</div></td>
+		<td><div class="mydiv" id="ro6">__</div></td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<input type="button" value="로또생성하기" onclick="lotto()">
+		</td>
+	</tr>
+
+</table>
+
+
+
+</html>

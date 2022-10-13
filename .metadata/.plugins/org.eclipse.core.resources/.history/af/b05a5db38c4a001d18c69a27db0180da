@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<style type="text/css">
+.myit {
+   width: 20px;
+}
+</style>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#btn").bind("click", function() {
+         var game = [ "홀", "짝" ];
+         $("#it_com").val(game[parseInt(Math.random() * 2)]);
+         $("#it_result").val();
+         if ($("#it_mine").val() == $("#it_com").val()) {
+            $("#it_result").val("승리");
+         } else {
+            $("#it_result").val("패배");
+         }
+      });
+   });
+</script>

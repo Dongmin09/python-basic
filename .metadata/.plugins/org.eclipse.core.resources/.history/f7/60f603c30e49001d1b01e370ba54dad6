@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.myit{
+	width: 20px];
+}
+
+</style>
+<script>
+function myclick(){
+
+	
+	
+	}
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td>
+			<input type="text" class="myit" id="it1">
+		</td>
+		<td>
+			<input type="button" value="plus" >
+			<input type="button" value="minus" >
+			<input type="button" value="multiply" >
+			<input type="button" value="divide" >
+		</td>
+		<td>
+			<input type="text" id="it2"/>
+		</td>
+		<td>
+			=
+		</td>
+		<td>
+			<input type="text" id="it3"/>
+		</td>
+		
+	</tr>
+
+
+</table>
+
+
+
+</html>

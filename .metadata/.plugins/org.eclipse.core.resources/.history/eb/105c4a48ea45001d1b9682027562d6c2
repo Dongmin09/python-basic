@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+<title>Item Details</title> 
+</head> 
+<script type="text/javascript">
+	var cnt = "{{cnt}}";
+	if(cnt == "1"){
+		alert("정상적으로 수정되었습니다.")
+		location.href = "emp_list";
+	}else{
+		history.go(-1);
+		history.back();
+	}
+</script>
+<body>
+EMP_Detailfsdfsd
+
+
+</table>    
+</body> 
+</html>

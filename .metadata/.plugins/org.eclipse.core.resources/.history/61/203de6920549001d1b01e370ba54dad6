@@ -1,0 +1,27 @@
+from fastapi import FastAPI, Request, Form
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from starlette.responses import JSONResponse
+
+
+
+app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
+
+
+@app.get("/emp", response_class=HTMLResponse)
+async def emp_list(request: Request):
+
+    return templates.TemplateResponse("emp.html", {"request": request})
+
+@app.get("/emp_selects")
+async def generate_id_for_name(name: str):
+    return JSONResponseponse({
+        'name': '홍길동'
+    })
+
+
+# uvicorn myemp:app --reload

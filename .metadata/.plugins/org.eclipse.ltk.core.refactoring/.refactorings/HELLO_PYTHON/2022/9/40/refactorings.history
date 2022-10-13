@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 elements to &apos;HELLO_JAVA/src/day04&apos;&#x0D;&#x0A;- Original project: &apos;HELLO_PYTHON&apos;&#x0D;&#x0A;- Destination element: &apos;HELLO_JAVA/src/day04&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MySwing04.java&#x0D;&#x0A;     MySwing07.java&#x0D;&#x0A;     MySwing06.java&#x0D;&#x0A;     MySwing05.java&#x0D;&#x0A;     MySwing09.java&#x0D;&#x0A;     MySwing08.java" description="Copy files" destination="=HELLO_JAVA/src&lt;day04" element1="day04/MySwing04.java" element2="day04/MySwing07.java" element3="day04/MySwing06.java" element4="day04/MySwing05.java" element5="day04/MySwing09.java" element6="day04/MySwing08.java" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1664496088816" units="0" version="1.0"/>
+</session>

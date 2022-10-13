@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function myclick(){
+	
+}
+</script>
+
+
+</head>
+<body>
+</body>
+<table>
+	<tr>
+		<td>출력단수</td>
+		<select id="myself">
+			<option value="2">2단</option>
+			<option value="3">2단</option>
+			<option value="4">2단</option>
+			<option value="5">2단</option>
+			<option value="6">2단</option>
+			<option value="7">2단</option>
+			<option value="8">2단</option>
+			<option value="9">2단</option>
+		</select>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" value="구구단출력하기">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<textarea id="myta" rows="20" cols="20"></textarea>
+		</td>
+	</tr>
+</table>
+
+
+
+</html>

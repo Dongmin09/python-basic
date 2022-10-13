@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+    <title>Item Details</title> 
+</head> 
+<script type="text/javascript">
+</script>
+<body>
+EMP_mod
+<form action="emp_add_act" method="post">
+<table border="1px">
+    	<tr>
+    		<td>사번</td>
+      		<td>
+      			<input type="text" name="e_id" value="">
+      		</td>
+    	</tr>
+    	<tr>
+    		<td>이름</td>
+      		<td>
+      			<input type="text" name="e_name" value="">
+      		</td>
+    	</tr>
+    	<tr>
+    		<td>성별</td>
+      		<td>
+      			<input type="text" name="sex" value="">
+      		</td>
+    	</tr>
+    	<tr>
+    		<td>주소</td>
+      		<td>
+      			<input type="text" name="addr" value="">
+      		</td>
+    	</tr>
+    	<tr>
+    		<td colspan="2">
+    			<input type="submit" value="실행!!!" />
+    		</td>
+    	</tr>
+	</table>    
+</form>
+</body> 
+</html>

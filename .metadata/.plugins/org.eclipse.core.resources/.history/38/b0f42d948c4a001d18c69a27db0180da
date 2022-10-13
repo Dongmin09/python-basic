@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.myit{
+	width: 20px;
+}
+
+</style>
+<script>
+function myclick(){
+
+	
+	
+}
+</script>
+
+
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td>나:</td>
+		<td>
+			<input type="text" id="it_mine" class="myit">
+		</td>
+	</tr>
+	<tr>
+		<td>컴:</td>
+		<td>
+			<input type="text" class="myit" id="it_com">
+		</td>
+	</tr>
+	<tr>
+		<td>결과:</td>
+		<td>
+			<input type="text" class="myit" id="it_result">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" id="btn" value="게임하기">
+		</td>
+	</tr>
+
+</table>
+</body>
+
+
+
+
+</html>

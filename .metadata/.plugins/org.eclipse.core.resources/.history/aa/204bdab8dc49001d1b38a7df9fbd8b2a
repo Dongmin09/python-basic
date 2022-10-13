@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="static/js/jquery-3.6.1.js"></script>
+<script>
+$(document).ready(function(){    
+	$("#click").click(getMemberList); 
+	//id="listButton"인 태그에 click하면 function getMemberList() 실행});
+
+
+
+function myclick(){
+	$.obj = document.querySelector("#mydiv");
+	obj.innerHTML = "good Evening";
+	
+	}
+</script>
+
+
+</head>
+<body>
+</body>
+<div id="mydiv">Good Morning</div>
+<input type="button" id="click" value="click" onclick="myclick()">
+
+
+
+</html>

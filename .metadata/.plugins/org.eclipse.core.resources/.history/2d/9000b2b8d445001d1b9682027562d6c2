@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Item Details</title> 
+</head> 
+<body>    
+    {{ str }}
+    {{ arr }} 
+    
+    {% for i in arr %}
+    {{ i }} 
+   	{% endfor %}
+    
+    <table border="1px">
+    	<tr>
+    		<td>아이디</td>
+    		<td>이름</td>
+    		<td>성별</td>    	
+    		<td>주소</td>    	
+    	</tr>
+   	   	 {% for emp in emps %}
+      	<tr> 
+      		<td>{{emp.e_id}}</td>
+      		<td>{{emp.e_name}}</td>
+      		<td>{{emp.sex}}</td>
+      		<td>{{emp.addr}}</td>
+         	<td>{{value}}</td>
+      	</tr>
+     	 {% endfor %}
+    </table>
+</body> 
+</html>

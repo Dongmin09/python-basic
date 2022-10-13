@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10/12 수업</title>
+<script src="js/jquery-3.6.1.js"></script>
+<style type="text/css">
+#it{
+	width:100px;
+	text-align: right;
+
+}
+table{
+	text-align: center;
+}
+
+</style>
+<script>
+function myclick(e){
+	var obj_it = document.querySelector("#it");
+	var str_new = $(e.target).val();
+	var str_old = $("#it").val();
+	
+		
+}
+
+function mycall(){
+	var obj_it = document.querySelector("#it");
+	var str_tel = $("#it").val();
+	
+	alert("calling\n"+str_tel);	
+}
+
+$(document).ready(function(){    
+    $("#btn").bind("click", function() {
+       myclick();
+    });
+});
+
+
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td colspan="3">
+			<input type="text" id="it" />
+		</td>
+	
+	</tr>
+	<tr>
+		<!--myclick('1'), myclick(this), myclick(event)
+		function myclick(num){}, function myclick(this){}, function myclick(e){}
+		  -->
+		<td><input type="button" id="btn1" value="1" onclick="myclick(event)"/></td>
+		<td><input type="button" id="btn2" value="2" onclick="myclick(event)"/></td>
+		<td><input type="button" id="btn3" value="3" onclick="myclick(event)"/></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="btn4" value="4" onclick="myclick(event)"/></td>
+		<td><input type="button" id="btn5" value="5" onclick="myclick(event)"/></td>
+		<td><input type="button" id="btn6" value="6" onclick="myclick(event)"/></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="btn7" value="7" onclick="myclick(event)"/></td>
+		<td><input type="button" id="btn8" value="8" onclick="myclick(event)"/></td>
+		<td><input type="button" id="btn9" value="9" onclick="myclick(event)"/></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="btn0" value="0" onclick="myclick(event)"/></td>
+		<td colspan="2">
+			<input type="button" id="btn_call" value="CALL" onclick="mycall()">
+		</td>
+	</tr>
+</table>
+
+
+</html>

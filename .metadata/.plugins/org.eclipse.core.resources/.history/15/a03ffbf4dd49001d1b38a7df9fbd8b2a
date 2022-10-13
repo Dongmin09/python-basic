@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.6.1.js"></script>
+<script>
+	
+function myclick(){
+	$("#mydiv").text("Good Evening");
+
+}
+
+$(document).ready(function(){    
+    $("#demo1 li").bind("click", function() {
+        alert($(this).text());
+    });
+	
+
+});
+
+</script>
+
+
+</head>
+<body>
+</body>
+<div id="mydiv">Good Morning</div>
+<input type="button" id="click" value="click" onclick="myclick()">
+
+
+
+</html>

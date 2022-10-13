@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function myclick(){
+
+	
+	
+	}
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td>
+			<input type="text" id="it1">
+		</td>
+	</tr>
+
+
+</table>
+
+
+
+</html>

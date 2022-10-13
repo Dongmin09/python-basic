@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.myit{
+	width: 20px;
+}
+
+</style>
+<script>
+function plus(){
+	var oa = document.querySelector("#it1");
+	var ob = document.querySelector("#it2");
+	var obj = document.querySelector("#it3")
+	
+	
+	var a = oa.value;
+	var b = ob.value;
+	var c = parseInt(a) + parseInt(b);
+	obj.value = c;
+}
+function minus(){
+	var oa = document.querySelector("#it1");
+	var ob = document.querySelector("#it2");
+	var obj = document.querySelector("#it3")
+	
+	
+	var a = oa.value;
+	var b = ob.value;
+	var c = parseInt(a) - parseInt(b);
+	obj.value = c;
+}
+
+function multiply(){
+
+}
+
+function divide(){
+
+}
+</script>
+
+
+</head>
+<body>
+</body>
+<table border="1px">
+	<tr>
+		<td>
+			<input type="text" class="myit" id="it1">
+		</td>
+		<td>
+			<input type="button" value="plus" onclick="plus()" ><br/>
+			<input type="button" value="minus" onclick="minus()" ><br/>
+			<input type="button" value="multiply" onclick="multiply()" ><br/>
+			<input type="button" value="divide"  onclick="divide()"><br/>
+		</td>
+		<td>
+			<input type="text" class="myit" id="it2"/>
+		</td>
+		<td>
+			=
+		</td>
+		<td>
+			<input type="text" class="myit" id="it3"/>
+		</td>
+		
+	</tr>
+
+
+</table>
+
+
+
+</html>

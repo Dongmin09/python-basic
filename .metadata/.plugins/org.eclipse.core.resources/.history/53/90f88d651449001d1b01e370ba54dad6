@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.myit{
+	width: 20px;
+}
+
+</style>
+<script>
+	function myclick(){
+	var obj = document.querySelector("#mydiv");
+	obj.innerHTML = "good Evening";
+// 	obj.innerText = "good Evening";
+	
+	
+	}
+</script>
+
+
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td>나:</td>
+		<td>
+			<input type="text" id="it_mine" class="myit">
+		</td>
+	</tr>
+	<tr>
+		<td>컴:</td>
+		<td>
+			<input type="text" class="myit">
+		</td>
+	</tr>
+
+</table>
+</body>
+
+
+
+
+</html>
