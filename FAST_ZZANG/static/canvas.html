@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function myinit(){
+	var c = document.getElementById("mycan");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+	ctx.stroke();
+	ctx.fill();
+	/* x좌표 : 100
+		y좌표 : 75
+		반지름 : 50
+		각도 : 0라디안 ~ 2파이라디안
+	*/
+}
+
+</script>
+</head>
+<body onload="myinit()">
+<canvas id="mycan" width="400px" height="400px">
+
+
+</canvas>
+</body>
+</html>

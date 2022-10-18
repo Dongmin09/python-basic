@@ -13,5 +13,9 @@ templates = Jinja2Templates(directory="templates")
 async def zzang(request: Request):
     return templates.TemplateResponse("zzang.html", {"request": request})
 
+@app.get("/zzang2", response_class=HTMLResponse)
+async def zzang2(request: Request):
+    return templates.TemplateResponse("zzang2.html", {"request": request})
 
-    #uvicorn mymem:app --reload
+
+    #uvicorn myajax:app --reload
