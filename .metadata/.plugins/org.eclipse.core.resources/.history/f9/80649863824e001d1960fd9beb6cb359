@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var cvr2D = [
+	[1,0,1,0],
+	[1,1,1,0],
+	[0,0,0,1],
+	[1,1,0,0]
+];
+
+function myinit(){
+	var canvas = document.getElementById('mycan');
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 150, 500, 500);
+
+}
+
+</script>
+</head>
+<body onload="myinit()">
+<canvas id="mycan" width="1000px" height="1000px">
+
+
+</canvas>
+</body>
+</html>

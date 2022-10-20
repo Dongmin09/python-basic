@@ -134,7 +134,7 @@ function sendMessage(txt) {
 }
 
 function myinit(){
-	shuffle();
+	//shuffle();
 	patchIJEvent();
 }
 function setDsp2D(){
@@ -290,7 +290,6 @@ function send_ready(){
 	sendMessage("ready:"+user)
 }
 function send_start(){
-	
 	sendMessage("start:")
 }
 

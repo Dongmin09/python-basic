@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <style>
+        #mycan{
+            border: 1px solid black;
+        }
+    </style>
+<script type="text/javascript">
+var cvr2D = [
+	[1,0,1,0],
+	[1,1,1,0],
+	[0,0,0,1],
+	[1,1,0,0]
+];
+
+function myinit(){
+	var canvas = document.getElementById('mycan');
+    var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(50,50);
+	// 세로
+	ctx.lineTo(50, 100); // 
+	ctx.lineTo(50, 150); // 
+	ctx.lineTo(50, 200);  
+	ctx.lineTo(50, 250);
+	ctx.lineTo(50, 300);
+	ctx.lineTo(50, 350);
+	
+	ctx.lineTo(100, 50);
+	ctx.lineTo(150, 50);
+	ctx.lineTo(200, 50);
+	ctx.lineTo(250, 50);
+	ctx.lineTo(300, 50);
+	ctx.lineTo(350, 50);
+
+	ctx.stroke();
+}
+
+
+</script>
+</head>
+<body onload="myinit()">
+<canvas id="mycan" width="1000px" height="1000px">
+
+
+</canvas>
+</body>
+</html>

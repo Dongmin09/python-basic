@@ -59,11 +59,7 @@ ws.onmessage = function(event) {
 	}	
 	if(arr_txt[0]=="display"){
 		reiv_display(arr_txt[1],arr_txt[2]);
-	}
-	if(arr_txt[0]=="win"){
-		reiv_win(arr_txt[1]);
-	}
-	
+	}	
 	
 };
 
@@ -98,10 +94,6 @@ function reiv_score(user,score){
 function reiv_start(){
 	flag_ing = true;
 }
-function reiv_win(user){
-	flag_ing = false;
-	alert(user+"가 이겼습니다.");
-}
 
 var users = [];
 function reiv_ready(user){
@@ -134,7 +126,7 @@ function sendMessage(txt) {
 }
 
 function myinit(){
-	shuffle();
+	//shuffle();
 	patchIJEvent();
 }
 function setDsp2D(){
@@ -221,8 +213,8 @@ function gostep3(){
 	console.log(cvr2D+"");
 	
 	if(cnt_final==16){
-		sendMessage("win:"+obj_user.value);
 		flag_ing = false;
+		alert("당신이 이겼습니다.");
 	}
 	
 	s1i =-1;
@@ -290,7 +282,6 @@ function send_ready(){
 	sendMessage("ready:"+user)
 }
 function send_start(){
-	
 	sendMessage("start:")
 }
 

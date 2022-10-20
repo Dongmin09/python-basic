@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;FAST_THREEJS&apos;&#x0D;&#x0A;- Original project: &apos;FAST_EMP&apos;&#x0D;&#x0A;- Destination element: &apos;FAST_THREEJS&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     emp_dao.py&#x0D;&#x0A;     myemp.py&#x0D;&#x0A;     templates&#x0D;&#x0A;     static" description="Copy elements" element1="emp_dao.py" element2="myemp.py" element3="templates" element4="static" files="2" flags="589830" folders="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1666232442593" target="/FAST_THREEJS" units="0" version="1.0"/>
+</session>

@@ -59,20 +59,17 @@ ws.onmessage = function(event) {
 	}	
 	if(arr_txt[0]=="display"){
 		reiv_display(arr_txt[1],arr_txt[2]);
-	}
-	if(arr_txt[0]=="win"){
-		reiv_win(arr_txt[1]);
-	}
-	
+	}	
 	
 };
 
 function reiv_display(user,info){
 	var idx = indexUser(user);
-	var arr = info.split(",");
+	var arr = str.split(",");
 	
-	var c = document.querySelectorAll(".can")[idx];
-	var ctx = c.getContext("2d");
+	var c = document.querySelectorAll(".can");
+	var ctx = canvas.getContext("2d");
+    
     for(var i=0; i<4; i++){
     	for(var j=0; j<4; j++){
     		if(arr[i*4+j] == "1"){
@@ -80,8 +77,7 @@ function reiv_display(user,info){
     		}else{
   	 	 		ctx.fillStyle = "#000000";
     		}
-			/* ctx.fillRect(j*60,i*30,55,27); */
-			ctx.fillRect(j*75,i*40,70,37);
+			ctx.fillRect(j*10,i*10,9,9);
     	}
     }
 	
@@ -97,10 +93,6 @@ function reiv_score(user,score){
 
 function reiv_start(){
 	flag_ing = true;
-}
-function reiv_win(user){
-	flag_ing = false;
-	alert(user+"가 이겼습니다.");
 }
 
 var users = [];
@@ -134,7 +126,7 @@ function sendMessage(txt) {
 }
 
 function myinit(){
-	shuffle();
+	//shuffle();
 	patchIJEvent();
 }
 function setDsp2D(){
@@ -221,8 +213,8 @@ function gostep3(){
 	console.log(cvr2D+"");
 	
 	if(cnt_final==16){
-		sendMessage("win:"+obj_user.value);
 		flag_ing = false;
+		alert("당신이 이겼습니다.");
 	}
 	
 	s1i =-1;
@@ -290,7 +282,6 @@ function send_ready(){
 	sendMessage("ready:"+user)
 }
 function send_start(){
-	
 	sendMessage("start:")
 }
 
